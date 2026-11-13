@@ -200,18 +200,58 @@ function acceptQuest() {
           </div>
         </div>
 
-        <div class="final-message">
-          <h2>OUR FIRST MONTHSARY ♡</h2>
-          <p>
-            No legendary Pokémon required.
-            Just two trainers making another
-            little memory together.
-          </p>
-          <div class="envelope">💗</div>
-          <h2>See you on November 29, Lablab!</h2>
-        </div>
+     
+<div class="final-message">
 
-      </div>
+  <h2>OUR FIRST MONTHSARY ♡</h2>
+
+  <p>Little moments, favorite memories, and us.</p>
+
+  <div class="photo-gallery">
+
+    <div class="polaroid photo-one">
+      <img src="us-photo-1.jpg" alt="Our first memory">
+      <p>Memory no. 01 ♡</p>
+    </div>
+
+    <div class="polaroid photo-two">
+      <img src="us-photo-2.jpg" alt="Our second memory">
+      <p>Memory no. 02 ♡</p>
+    </div>
+
+    <div class="polaroid photo-three">
+      <img src="us-photo-3.jpg" alt="Our third memory">
+      <p>Memory no. 03 ♡</p>
+    </div>
+
+  </div>
+
+  <h2>OUR PARTNER POKÉMON</h2>
+
+  <p>Different partners, one adventure. ♡</p>
+
+  <div class="pokemon-gallery">
+
+    <div class="pokemon-card">
+      <img src="gardevoir.png" alt="Gardevoir">
+      <h3>GARDEVOIR</h3>
+      <p>His Pokémon Partner</p>
+      <small>PSYCHIC / FAIRY</small>
+    </div>
+
+    <div class="pokemon-card">
+      <img src="oshawott.png" alt="Oshawott">
+      <h3>OSHAWOTT</h3>
+      <p>Your Pokémon Partner</p>
+      <small>WATER TYPE</small>
+    </div>
+
+  </div>
+
+  <h2>See you on November 29, Lablab! ♡</h2>
+
+</div>
+
     `;
 
     card.style.transition = "all .5s ease";

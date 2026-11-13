@@ -94,6 +94,14 @@ function showInvitation() {
           Occasion: Our 1st Monthsary ♡
         </p>
 
+<div class="dress-code">
+  <span class="dress-icon">👕</span>
+  <p class="dress-label">TRAINER'S DRESS CODE</p>
+  <h2>GREEN POLO DAY! 💚</h2>
+  <p>Wear our matching green polos!</p>
+  <small>Because we're already a matching team ♡</small>
+</div>
+
         <p class="letter-message">
           A whole day of food, nature, art, and memories.
         </p>

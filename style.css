@@ -1,189 +1,85 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+/* MONTHSARY QUEST LOG */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: 'Nunito', sans-serif;
-  overflow: hidden;
-}
-
-.world {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 20%, #fff9, transparent 30%),
-    #dce8d2;
-}
-
-.world::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: .25;
-  pointer-events: none;
-  background-image: radial-gradient(#786b5730 1px, transparent 1px);
-  background-size: 7px 7px;
-}
-
-.intro-card {
-  width: min(440px, 90vw);
-  min-height: 550px;
-  padding: 60px 30px;
-  position: relative;
+.quest-log {
   text-align: center;
-  background: #fffdf5;
-  box-shadow: 0 30px 60px #3c322f30;
-  transform: rotate(-1deg);
-  animation: appear 1s ease;
 }
 
-.tiny-label {
-  font-size: 10px;
-  letter-spacing: 3px;
-  color: #9c8f7d;
-  font-weight: 800;
+.quest-date {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  margin: 22px 0;
+  background: #edf4df;
+  border: 2px dashed #8b9b72;
+  border-radius: 14px;
 }
 
-.pokeball {
-  width: 95px;
-  height: 95px;
-  margin: 35px auto 20px;
-  border-radius: 50%;
-  position: relative;
-  border: 5px solid #403832;
-  background: linear-gradient(to bottom, #ef6268 0 46%, #403832 46% 54%, #f8f3e7 54% 100%);
-  animation: float 3s ease-in-out infinite;
+.quest-date span {
+  font-size: 28px;
 }
 
-.poke-button {
-  position: absolute;
-  width: 29px;
-  height: 29px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: #fffdf5;
-  border: 5px solid #403832;
-  border-radius: 50%;
-}
-
-h1, h2, .handwriting {
-  font-family: 'Caveat', cursive;
-}
-
-h1 {
-  font-size: 68px;
-  margin: 12px 0 0;
-  color: #4a4037;
-}
-
-h2 {
-  font-size: 40px;
-  color: #d85d68;
-  margin: 8px 0 18px;
-}
-
-.handwriting {
-  font-size: 26px;
-  color: #66584d;
-}
-
-.start-button {
-  margin-top: 25px;
-  width: 220px;
-  height: 65px;
-  border: none;
-  border-radius: 18px;
-  background: #e45d66;
-  color: white;
-  font-weight: 800;
-  letter-spacing: 2px;
-  font-size: 14px;
-  box-shadow: 0 8px 0 #ae4149;
-  cursor: pointer;
-  transition: .15s;
-}
-
-.start-button:hover {
-  transform: translateY(-4px);
-}
-
-.start-button:active {
-  transform: translateY(5px);
-  box-shadow: 0 3px 0 #ae4149;
-}
-
-.small-text {
-  font-size: 11px;
-  color: #a09588;
+.quest-date strong {
   letter-spacing: 1px;
-  margin-top: 20px;
 }
 
-@keyframes float {
-  50% { transform: translateY(-9px); }
+.quest-date small {
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 
-@keyframes appear {
-  from { opacity: 0; transform: translateY(30px) rotate(-4deg); }
-  to { opacity: 1; transform: translateY(0) rotate(-1deg); }
+.quest-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+  padding: 15px;
+  margin: 12px 0;
+  background: #fffdf4;
+  border: 1px solid #d8d5bd;
+  border-radius: 12px;
+  box-shadow: 3px 4px 0 rgba(90, 100, 70, .12);
+  transition: transform .2s ease;
 }
 
-@media (max-width: 500px) {
-  .intro-card {
-    min-height: 520px;
-    padding: 50px 20px;
-  }
+.quest-item:hover {
+  transform: translateY(-3px);
 }
 
-/* NEW LETTER SCENES */
-
-.letter-scene {
-  animation: letterReveal .7s ease both;
-  padding-top: 15px;
+.quest-icon {
+  font-size: 27px;
+  min-width: 35px;
+  text-align: center;
 }
 
-.envelope {
-  font-size: 75px;
-  margin: 25px auto;
-  animation: float 3s ease-in-out infinite;
+.quest-item strong {
+  font-size: 13px;
+  letter-spacing: .5px;
+  color: #536b48;
 }
 
-.letter-scene h1 {
-  font-size: 55px;
+.quest-item p {
+  margin: 6px 0;
+  font-size: 14px;
 }
 
-.letter-scene h2 {
-  font-size: 32px;
-  line-height: 1.2;
+.quest-item small {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #777965;
 }
 
-.letter-message {
-  font-family: 'Caveat', cursive;
-  font-size: 25px;
-  line-height: 1.4;
-  color: #66584d;
-  margin: 20px 0;
+.final-message {
+  margin-top: 25px;
+  padding: 20px 12px;
+  background: #edf4df;
+  border-radius: 14px;
+  border: 2px dashed #8b9b72;
 }
 
-@keyframes letterReveal {
-  from {
-    opacity: 0;
-    transform: translateY(25px) rotate(-2deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) rotate(0);
-  }
+.final-message p {
+  line-height: 1.7;
+  font-size: 14px;
 }
-

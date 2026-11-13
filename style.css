@@ -366,3 +366,38 @@ h2 {
     height: 100px;
   }
 }
+
+/* MATCHING POLO DRESS CODE */
+
+.dress-code {
+  background: #edf4df;
+  border: 2px dashed #8b9b72;
+  border-radius: 14px;
+  padding: 16px 12px;
+  margin: 22px 0;
+}
+
+.dress-icon {
+  font-size: 30px;
+}
+
+.dress-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #87936d;
+}
+
+.dress-code h2 {
+  margin: 8px 0;
+  color: #536b48;
+}
+
+.dress-code p {
+  font-size: 14px;
+}
+
+.dress-code small {
+  font-family: cursive;
+  color: #71865d;
+}
+

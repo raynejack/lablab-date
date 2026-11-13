@@ -230,23 +230,23 @@ function acceptQuest() {
 
   <p>Different partners, one adventure. ♡</p>
 
-  <div class="pokemon-gallery">
+ <div class="pokemon-gallery">
 
-    <div class="pokemon-card">
-      <img src="gardevoir.png" alt="Gardevoir">
-      <h3>GARDEVOIR</h3>
-      <p>His Pokémon Partner</p>
-      <small>PSYCHIC / FAIRY</small>
-    </div>
-
-    <div class="pokemon-card">
-      <img src="oshawott.png" alt="Oshawott">
-      <h3>OSHAWOTT</h3>
-      <p>Your Pokémon Partner</p>
-      <small>WATER TYPE</small>
-    </div>
-
+  <div class="pokemon-card">
+    <small>YOUR POKÉMON</small>
+    <img src="gardevoir.png" alt="Gardevoir">
+    <h3>Gardevoir</h3>
+    <p>Your trusted partner ♡</p>
   </div>
+
+  <div class="pokemon-card">
+    <small>MY POKÉMON</small>
+    <img src="oshawott.jpg" alt="Oshawott">
+    <h3>Oshawott</h3>
+    <p>My little companion ♡</p>
+  </div>
+
+</div>
 
   <h2>See you on November 29, Lablab! ♡</h2>
 

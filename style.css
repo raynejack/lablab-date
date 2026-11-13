@@ -400,4 +400,25 @@ h2 {
   font-family: cursive;
   color: #71865d;
 }
+/* KEEP THE SCRAPBOOK CARD STYLED ON EVERY SCREEN */
 
+.intro-card {
+  background-color: #fffdf4;
+  color: #536b48;
+}
+
+.intro-card .letter-scene {
+  width: 100%;
+}
+
+.intro-card .dress-code {
+  background: #edf4df;
+  border: 2px dashed #8b9b72;
+  border-radius: 14px;
+  padding: 16px 12px;
+  margin: 22px 0;
+}
+
+.intro-card .dress-code h2 {
+  color: #536b48;
+}

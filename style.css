@@ -1,5 +1,174 @@
 
-/* MONTHSARY QUEST LOG */
+/* =================================
+   ORIGINAL SCRAPBOOK DESIGN
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #c9d9b9;
+  font-family: Georgia, serif;
+  color: #536b48;
+}
+
+.world {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+}
+
+.intro-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 38px 28px;
+  background: #fffdf4;
+  border: 2px solid #e5dfc9;
+  border-radius: 8px;
+  box-shadow: 8px 10px 0 rgba(75, 95, 60, .15);
+  text-align: center;
+  position: relative;
+  transform: rotate(-1deg);
+  transition: all .5s ease;
+}
+
+.intro-card::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px dashed #c6c9a8;
+  pointer-events: none;
+}
+
+.intro-card > * {
+  position: relative;
+}
+
+.tiny-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #87936d;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #536b48;
+  margin: 18px 0 8px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #71865d;
+}
+
+.handwriting {
+  font-family: cursive;
+  font-size: 19px;
+  color: #87936d;
+  line-height: 1.6;
+}
+
+.letter-message {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666b55;
+}
+
+.small-text {
+  font-family: cursive;
+  font-size: 13px;
+  color: #92977c;
+  margin-top: 20px;
+}
+
+/* POKEBALL */
+
+.pokeball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 25px auto;
+  background: linear-gradient(
+    to bottom,
+    #e96e68 0%,
+    #e96e68 47%,
+    #536b48 47%,
+    #536b48 53%,
+    #fffdf4 53%,
+    #fffdf4 100%
+  );
+  border: 4px solid #536b48;
+  position: relative;
+  box-shadow: 4px 5px 0 rgba(0,0,0,.12);
+}
+
+.poke-button {
+  width: 29px;
+  height: 29px;
+  background: #fffdf4;
+  border: 4px solid #536b48;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* BUTTONS */
+
+.start-button {
+  background: #81966b;
+  color: #fffdf4;
+  border: none;
+  padding: 14px 25px;
+  margin-top: 20px;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 3px 4px 0 #536b48;
+  transition: all .2s ease;
+}
+
+.start-button:hover {
+  background: #687e56;
+  transform: translateY(-2px);
+  box-shadow: 3px 6px 0 #536b48;
+}
+
+/* LETTER SCENES */
+
+.letter-scene {
+  position: relative;
+  text-align: center;
+  animation: appear .5s ease;
+}
+
+.envelope {
+  font-size: 55px;
+  margin: 20px auto;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =================================
+   MONTHSARY QUEST LOG
+================================= */
 
 .quest-log {
   text-align: center;
@@ -84,7 +253,9 @@
   font-size: 14px;
 }
 
-/* OUR PHOTO SCRAPBOOK */
+/* =================================
+   OUR PHOTO SCRAPBOOK
+================================= */
 
 .photo-gallery {
   display: grid;
@@ -134,7 +305,9 @@
   transform: rotate(-2deg);
 }
 
-/* POKEMON PARTNER CARDS */
+/* =================================
+   POKEMON PARTNER CARDS
+================================= */
 
 .pokemon-gallery {
   display: grid;
@@ -170,4 +343,26 @@
   font-size: 10px;
   letter-spacing: 1px;
   color: #7b896a;
+}
+
+/* =================================
+   MOBILE DISPLAY
+================================= */
+
+@media (max-width: 480px) {
+  .intro-card {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .photo-gallery {
+    gap: 12px;
+  }
+
+  .pokemon-card img {
+    height: 100px;
+  }
 }

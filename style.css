@@ -83,3 +83,91 @@
   line-height: 1.7;
   font-size: 14px;
 }
+
+/* OUR PHOTO SCRAPBOOK */
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: center;
+  margin: 25px auto;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 9px 9px 15px;
+  box-shadow: 3px 5px 12px rgba(0,0,0,.15);
+  transition: transform .25s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.04);
+}
+
+.polaroid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.polaroid p {
+  font-family: cursive;
+  font-size: 13px;
+  margin: 10px 0 0;
+  color: #536b48;
+}
+
+.photo-one {
+  transform: rotate(-4deg);
+}
+
+.photo-two {
+  transform: rotate(3deg);
+}
+
+.photo-three {
+  grid-column: 1 / -1;
+  width: 75%;
+  justify-self: center;
+  transform: rotate(-2deg);
+}
+
+/* POKEMON PARTNER CARDS */
+
+.pokemon-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.pokemon-card {
+  padding: 12px 8px;
+  background: #fffdf4;
+  border: 2px solid #a5b58c;
+  border-radius: 12px;
+  box-shadow: 3px 4px 0 rgba(90,100,70,.12);
+}
+
+.pokemon-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+}
+
+.pokemon-card h3 {
+  font-size: 13px;
+  color: #536b48;
+}
+
+.pokemon-card p {
+  font-size: 12px;
+}
+
+.pokemon-card small {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #7b896a;
+}
